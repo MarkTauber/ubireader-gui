@@ -674,10 +674,10 @@ class UBIReaderUIMixin:
 
         if p.exists():
             mb = p.stat().st_size / (1024 * 1024)
-            self.file_info_label.config(fg=GREEN, text=f"V  {p.name}  ({mb:.1f} MB)")
+            self.file_info_label.config(fg=GREEN, text=f"{p.name}  ({mb:.1f} MB)")
 
         else:
-            self.file_info_label.config(fg=RED, text="!  File not found")
+            self.file_info_label.config(fg=RED, text="File not found")
 
         self._update_cmd_preview()
 
