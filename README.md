@@ -2,6 +2,8 @@
 
 A lightweight desktop interface for `ubireader` tools in python.
 
+![GUI](gui.png)
+
 ## Requirements
 
 - Python 3.8+
