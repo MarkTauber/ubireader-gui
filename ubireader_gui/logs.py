@@ -67,7 +67,7 @@ class UBIReaderLogMixin:
 
 
     def _log_ok(self, text):
-        self._write_log(f"  {text}", "ok")
+        self._write_log(f"  V {text}", "ok")
 
 
     def _log_warn(self, text):
