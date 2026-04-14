@@ -53,7 +53,7 @@ class UBIReaderProcessMixin:
                 }
 
         self.history.append(entry)
-        self.history_list.insert(0, f"{entry['time']}  {Path(fp).name}")
+        self.history_list.insert(0, f"[{entry['time']}]  {Path(fp).name}")
 
         self.run_btn.config(state="disabled")
         self.stop_btn.config(state="normal")
