@@ -131,10 +131,10 @@ class UBIReaderProcessMixin:
                     break
 
                 if tag == "error":
-                    batch.append((f"  X {value}", "error"))
+                    batch.append((f"  [X] {value}", "error"))
 
                 elif tag == "warn":
-                    batch.append((f"  ! {value}", "warn"))
+                    batch.append((f"  [!] {value}", "warn"))
 
                 else:
                     batch.append((f"  {value}", "out"))
