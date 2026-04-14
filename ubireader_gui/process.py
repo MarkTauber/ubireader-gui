@@ -148,10 +148,10 @@ class UBIReaderProcessMixin:
         if done_rc is not None:
 
             if done_rc == 0:
-                self._log_ok(f"V Finished successfully (code {done_rc})")
+                self._log_ok(f"Finished successfully (code {done_rc})")
 
             else:
-                self._log_error(f"X Process exited with code {done_rc}")
+                self._log_error(f"Process exited with code {done_rc}")
 
             self._done()
             return
